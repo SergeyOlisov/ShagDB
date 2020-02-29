@@ -6,70 +6,164 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>800</height>
+    <width>1293</width>
+    <height>870</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="lable_pageOne">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>1280</width>
-      <height>800</height>
+      <height>799</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
     </property>
-    <property name="pixmap">
-     <pixmap>DesignImages/original_step_end.png</pixmap>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
     </property>
-   </widget>
-   <widget class="QPushButton" name="button_DB">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>460</y>
-      <width>421</width>
-      <height>131</height>
-     </rect>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
-    <property name="tabletTracking">
+    <property name="documentMode">
      <bool>false</bool>
     </property>
-    <property name="focusPolicy">
-     <enum>Qt::ClickFocus</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>DesignImages/step_mainbutton_end.png</normaloff>DesignImages/step_mainbutton_end.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>431</width>
-      <height>131</height>
-     </size>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="default">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
+    <property name="tabsClosable">
      <bool>true</bool>
     </property>
+    <property name="movable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="home">
+     <attribute name="title">
+      <string>Home</string>
+     </attribute>
+     <widget class="QPushButton" name="buttonStudent">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>291</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Mincho</family>
+        <pointsize>26</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Студенты</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>300</width>
+        <height>161</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonTeachers">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>330</y>
+        <width>291</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Mincho</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Преподаватели</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>1280</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../itstep_db/DesignImages/fon_end1.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonManagers">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>580</y>
+        <width>291</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Mincho</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Менеджеры</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonFaculty">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>580</y>
+        <width>291</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Факультеты</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>buttonStudent</zorder>
+     <zorder>buttonTeachers</zorder>
+     <zorder>buttonManagers</zorder>
+     <zorder>buttonFaculty</zorder>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -77,10 +171,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1280</width>
+     <width>1293</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+   </widget>
+   <addaction name="menuMenu"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

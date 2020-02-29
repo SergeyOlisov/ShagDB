@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>DialogManager</class>
- <widget class="QDialog" name="DialogManager">
+ <class>Student</class>
+ <widget class="QWidget" name="Student">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>1280</width>
-    <height>800</height>
+    <height>799</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Form</string>
   </property>
-  <widget class="QLabel" name="label_pageManager">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -26,26 +26,23 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>DesignImages/fon_end.png</pixmap>
+    <pixmap>../itstep_db/DesignImages/fon_end.png</pixmap>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableManagers">
+  <widget class="QTableWidget" name="tableStudents">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>410</y>
-     <width>651</width>
-     <height>371</height>
+     <y>290</y>
+     <width>581</width>
+     <height>491</height>
     </rect>
    </property>
    <property name="rowCount">
     <number>1000</number>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>100</number>
-   </attribute>
-   <attribute name="verticalHeaderDefaultSectionSize">
-    <number>27</number>
+    <number>180</number>
    </attribute>
    <row/>
    <row/>
@@ -1063,139 +1060,119 @@
     </property>
    </column>
   </widget>
-  <widget class="QPushButton" name="buttonSearch">
+  <widget class="QLabel" name="label_photo">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>370</y>
-     <width>71</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Поиск</string>
-   </property>
-  </widget>
-  <widget class="QDockWidget" name="dockManager">
-   <property name="geometry">
-    <rect>
-     <x>740</x>
-     <y>70</y>
-     <width>531</width>
-     <height>701</height>
-    </rect>
-   </property>
-   <widget class="QWidget" name="dockWidgetContents">
-    <widget class="QTreeWidget" name="treeManager">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>531</width>
-       <height>681</height>
-      </rect>
-     </property>
-     <column>
-      <property name="text">
-       <string notr="true">1</string>
-      </property>
-     </column>
-    </widget>
-    <widget class="QLabel" name="label_avatar">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>0</y>
-       <width>227</width>
-       <height>242</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>DesignImages/Photo.png</pixmap>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushEdit">
-     <property name="geometry">
-      <rect>
-       <x>390</x>
-       <y>632</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Редактировать</string>
-     </property>
-    </widget>
-    <widget class="QDialogButtonBox" name="buttonSave">
-     <property name="geometry">
-      <rect>
-       <x>360</x>
-       <y>600</y>
-       <width>156</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-     </property>
-    </widget>
-   </widget>
-  </widget>
-  <widget class="QLineEdit" name="lineManager">
-   <property name="geometry">
-    <rect>
-     <x>930</x>
-     <y>10</y>
-     <width>161</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string> Менеджер</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushBack">
-   <property name="geometry">
-    <rect>
-     <x>14</x>
-     <y>2</y>
-     <width>281</width>
-     <height>271</height>
+     <x>780</x>
+     <y>100</y>
+     <width>227</width>
+     <height>242</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
-   <property name="flat">
-    <bool>true</bool>
+   <property name="pixmap">
+    <pixmap>../itstep_db/DesignImages/Photo.png</pixmap>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textSearch">
+  <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>370</y>
-     <width>581</width>
-     <height>31</height>
+     <x>740</x>
+     <y>380</y>
+     <width>331</width>
+     <height>221</height>
     </rect>
    </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_lastname">
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit_lastname"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_firstname">
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_firstname"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_patronimyc">
+      <property name="text">
+       <string>Отчество</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_patronimyc"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_age">
+      <property name="text">
+       <string>Возраст</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEdit_4"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_sex">
+      <property name="text">
+       <string>Пол</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEdit_5"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_faculty">
+      <property name="text">
+       <string>Факультет</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineEdit_6"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_contacts">
+      <property name="text">
+       <string>Контакты</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineEdit_7"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_status">
+      <property name="text">
+       <string>Статус</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="lineEdit_8"/>
+    </item>
+   </layout>
   </widget>
-  <widget class="QPushButton" name="pushAdd">
+  <widget class="QPushButton" name="pushButton_add">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>410</y>
+     <x>620</x>
+     <y>300</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -1205,13 +1182,42 @@
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>DesignImages/Add_end.png</normaloff>DesignImages/Add_end.png</iconset>
+     <normaloff>../itstep_db/DesignImages/Add_end.png</normaloff>../itstep_db/DesignImages/Add_end.png</iconset>
    </property>
    <property name="iconSize">
     <size>
-     <width>24</width>
-     <height>24</height>
+     <width>31</width>
+     <height>31</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBoxSubmitCancel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>700</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Discard|QDialogButtonBox::Save</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_edit">
+   <property name="geometry">
+    <rect>
+     <x>974</x>
+     <y>732</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Редактировать</string>
    </property>
   </widget>
  </widget>
