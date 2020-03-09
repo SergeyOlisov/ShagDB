@@ -1,0 +1,11 @@
+release/faculty.o
+release/group.o
+release/main.o
+release/mainwindow.o
+release/students.o
+release/teacher.o
+release/moc_faculty.o
+release/moc_group.o
+release/moc_mainwindow.o
+release/moc_students.o
+release/moc_teacher.o

@@ -1152,7 +1152,7 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="line_LastName"/>
+     <widget class="QLineEdit" name="line_Lastname"/>
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="lab_Firstname">
@@ -1257,7 +1257,7 @@
      <widget class="QLineEdit" name="line_Email"/>
     </item>
     <item row="7" column="0">
-     <widget class="QLabel" name="lab_GroupNumber">
+     <widget class="QLabel" name="lab_NumberGroup">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -1271,7 +1271,7 @@
      </widget>
     </item>
     <item row="7" column="1">
-     <widget class="QLineEdit" name="line_GroupNumber"/>
+     <widget class="QLineEdit" name="line_NumberGroup"/>
     </item>
     <item row="8" column="0">
      <widget class="QLabel" name="lab_Status">

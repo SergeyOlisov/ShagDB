@@ -34,10 +34,10 @@ public:
     QPushButton *pushButton;
     QWidget *formLayoutWidget_2;
     QFormLayout *formLayout_2;
+    QLabel *lab_Lastname;
+    QLineEdit *line_Lastname;
     QLabel *lab_Firstname;
-    QLineEdit *line_LastName;
-    QLabel *lab_Name;
-    QLineEdit *line_Name;
+    QLineEdit *line_Firstname;
     QLabel *lab_Patronimyc;
     QLineEdit *line_Patronymic;
     QLabel *lab_Age;
@@ -48,8 +48,8 @@ public:
     QLineEdit *line_Phone;
     QLabel *lab_Email;
     QLineEdit *line_Email;
-    QLabel *lab_GroupNumber;
-    QLineEdit *line_GroupNumber;
+    QLabel *lab_NumberGroup;
+    QLineEdit *line_NumberGroup;
     QLabel *lab_Status;
     QLineEdit *line_Status;
     QLabel *lab_Faculty;
@@ -58,9 +58,9 @@ public:
     QLineEdit *line_StartEdu;
     QLineEdit *line_EndEdu;
     QLabel *lab_EndEdu;
-    QPushButton *ButtonSearch;
+    QPushButton *buttonSearch;
     QDialogButtonBox *buttonBox;
-    QPushButton *pushButton_Edit;
+    QPushButton *button_Edit;
     QTextEdit *textSearch;
 
     void setupUi(QWidget *Students)
@@ -114,31 +114,31 @@ public:
         formLayout_2->setHorizontalSpacing(0);
         formLayout_2->setVerticalSpacing(0);
         formLayout_2->setContentsMargins(0, 0, 0, 0);
-        lab_Firstname = new QLabel(formLayoutWidget_2);
-        lab_Firstname->setObjectName(QString::fromUtf8("lab_Firstname"));
+        lab_Lastname = new QLabel(formLayoutWidget_2);
+        lab_Lastname->setObjectName(QString::fromUtf8("lab_Lastname"));
         QFont font1;
         font1.setPointSize(14);
         font1.setBold(true);
         font1.setWeight(75);
+        lab_Lastname->setFont(font1);
+
+        formLayout_2->setWidget(0, QFormLayout::LabelRole, lab_Lastname);
+
+        line_Lastname = new QLineEdit(formLayoutWidget_2);
+        line_Lastname->setObjectName(QString::fromUtf8("line_Lastname"));
+
+        formLayout_2->setWidget(0, QFormLayout::FieldRole, line_Lastname);
+
+        lab_Firstname = new QLabel(formLayoutWidget_2);
+        lab_Firstname->setObjectName(QString::fromUtf8("lab_Firstname"));
         lab_Firstname->setFont(font1);
 
-        formLayout_2->setWidget(0, QFormLayout::LabelRole, lab_Firstname);
+        formLayout_2->setWidget(1, QFormLayout::LabelRole, lab_Firstname);
 
-        line_LastName = new QLineEdit(formLayoutWidget_2);
-        line_LastName->setObjectName(QString::fromUtf8("line_LastName"));
+        line_Firstname = new QLineEdit(formLayoutWidget_2);
+        line_Firstname->setObjectName(QString::fromUtf8("line_Firstname"));
 
-        formLayout_2->setWidget(0, QFormLayout::FieldRole, line_LastName);
-
-        lab_Name = new QLabel(formLayoutWidget_2);
-        lab_Name->setObjectName(QString::fromUtf8("lab_Name"));
-        lab_Name->setFont(font1);
-
-        formLayout_2->setWidget(1, QFormLayout::LabelRole, lab_Name);
-
-        line_Name = new QLineEdit(formLayoutWidget_2);
-        line_Name->setObjectName(QString::fromUtf8("line_Name"));
-
-        formLayout_2->setWidget(1, QFormLayout::FieldRole, line_Name);
+        formLayout_2->setWidget(1, QFormLayout::FieldRole, line_Firstname);
 
         lab_Patronimyc = new QLabel(formLayoutWidget_2);
         lab_Patronimyc->setObjectName(QString::fromUtf8("lab_Patronimyc"));
@@ -195,16 +195,16 @@ public:
 
         formLayout_2->setWidget(6, QFormLayout::FieldRole, line_Email);
 
-        lab_GroupNumber = new QLabel(formLayoutWidget_2);
-        lab_GroupNumber->setObjectName(QString::fromUtf8("lab_GroupNumber"));
-        lab_GroupNumber->setFont(font1);
+        lab_NumberGroup = new QLabel(formLayoutWidget_2);
+        lab_NumberGroup->setObjectName(QString::fromUtf8("lab_NumberGroup"));
+        lab_NumberGroup->setFont(font1);
 
-        formLayout_2->setWidget(7, QFormLayout::LabelRole, lab_GroupNumber);
+        formLayout_2->setWidget(7, QFormLayout::LabelRole, lab_NumberGroup);
 
-        line_GroupNumber = new QLineEdit(formLayoutWidget_2);
-        line_GroupNumber->setObjectName(QString::fromUtf8("line_GroupNumber"));
+        line_NumberGroup = new QLineEdit(formLayoutWidget_2);
+        line_NumberGroup->setObjectName(QString::fromUtf8("line_NumberGroup"));
 
-        formLayout_2->setWidget(7, QFormLayout::FieldRole, line_GroupNumber);
+        formLayout_2->setWidget(7, QFormLayout::FieldRole, line_NumberGroup);
 
         lab_Status = new QLabel(formLayoutWidget_2);
         lab_Status->setObjectName(QString::fromUtf8("lab_Status"));
@@ -250,17 +250,17 @@ public:
 
         formLayout_2->setWidget(12, QFormLayout::LabelRole, lab_EndEdu);
 
-        ButtonSearch = new QPushButton(Students);
-        ButtonSearch->setObjectName(QString::fromUtf8("ButtonSearch"));
-        ButtonSearch->setGeometry(QRect(530, 290, 91, 31));
+        buttonSearch = new QPushButton(Students);
+        buttonSearch->setObjectName(QString::fromUtf8("buttonSearch"));
+        buttonSearch->setGeometry(QRect(530, 290, 91, 31));
         buttonBox = new QDialogButtonBox(Students);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setEnabled(false);
         buttonBox->setGeometry(QRect(920, 700, 156, 23));
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
-        pushButton_Edit = new QPushButton(Students);
-        pushButton_Edit->setObjectName(QString::fromUtf8("pushButton_Edit"));
-        pushButton_Edit->setGeometry(QRect(974, 732, 101, 31));
+        button_Edit = new QPushButton(Students);
+        button_Edit->setObjectName(QString::fromUtf8("button_Edit"));
+        button_Edit->setGeometry(QRect(974, 732, 101, 31));
         textSearch = new QTextEdit(Students);
         textSearch->setObjectName(QString::fromUtf8("textSearch"));
         textSearch->setGeometry(QRect(20, 290, 511, 31));
@@ -283,22 +283,24 @@ public:
         QTableWidgetItem *___qtablewidgetitem2 = tableStudents->horizontalHeaderItem(2);
         ___qtablewidgetitem2->setText(QApplication::translate("Students", "\320\236\321\202\321\207\320\265\321\201\321\202\320\262\320\276", nullptr));
         pushButton->setText(QString());
-        lab_Firstname->setText(QApplication::translate("Students", "\320\244\320\260\320\274\320\270\320\273\320\270\321\217", nullptr));
-        lab_Name->setText(QApplication::translate("Students", "\320\230\320\274\321\217", nullptr));
+        lab_Lastname->setText(QApplication::translate("Students", "\320\244\320\260\320\274\320\270\320\273\320\270\321\217", nullptr));
+        lab_Firstname->setText(QApplication::translate("Students", "\320\230\320\274\321\217", nullptr));
         lab_Patronimyc->setText(QApplication::translate("Students", "\320\236\321\202\321\207\320\265\321\201\321\202\320\262\320\276", nullptr));
         lab_Age->setText(QApplication::translate("Students", "\320\224\320\260\321\202\320\260 \321\200\320\276\320\266\320\264\320\265\320\275\320\270\321\217", nullptr));
         lab_Sex->setText(QApplication::translate("Students", "\320\237\320\276\320\273", nullptr));
         lab_Phone->setText(QApplication::translate("Students", "\320\242\320\265\320\273\320\265\321\204\320\276\320\275", nullptr));
         lab_Email->setText(QApplication::translate("Students", "E-mail", nullptr));
-        lab_GroupNumber->setText(QApplication::translate("Students", "\320\235\320\276\320\274\320\265\321\200 \320\263\321\200\321\203\320\277\320\277\321\213", nullptr));
+        lab_NumberGroup->setText(QApplication::translate("Students", "\320\235\320\276\320\274\320\265\321\200 \320\263\321\200\321\203\320\277\320\277\321\213", nullptr));
         lab_Status->setText(QApplication::translate("Students", "\320\241\321\202\320\260\321\202\321\203\321\201", nullptr));
         lab_Faculty->setText(QApplication::translate("Students", "\320\244\320\260\320\272\321\203\320\273\321\214\321\202\320\265\321\202", nullptr));
         lab_StartEdu->setText(QApplication::translate("Students", "\320\235\320\260\321\207\320\260\320\273\320\276 \320\276\320\261\321\203\321\207\320\265\320\275\320\270\321\217", nullptr));
         lab_EndEdu->setText(QApplication::translate("Students", "\320\232\320\276\320\275\320\265\321\206 \320\276\320\261\321\203\321\207\320\265\320\275\320\270\321\217", nullptr));
-        ButtonSearch->setText(QApplication::translate("Students", "\320\237\320\276\320\270\321\201\320\272", nullptr));
-        pushButton_Edit->setText(QApplication::translate("Students", "\320\240\320\265\320\264\320\260\320\272\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
+        buttonSearch->setText(QApplication::translate("Students", "\320\237\320\276\320\270\321\201\320\272", nullptr));
+        button_Edit->setText(QApplication::translate("Students", "\320\240\320\265\320\264\320\260\320\272\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
     } // retranslateUi
+
 };
+
 namespace Ui {
     class Students: public Ui_Students {};
 } // namespace Ui

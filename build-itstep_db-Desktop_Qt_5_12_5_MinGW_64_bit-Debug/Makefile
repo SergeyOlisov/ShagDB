@@ -210,6 +210,7 @@ Makefile: ../ShagDB/itstep_db.pro ../../../Qt/5.12.5/mingw73_64/mkspecs/win32-g+
 		../../../Qt/5.12.5/mingw73_64/mkspecs/features/qt_config.prf \
 		../../../Qt/5.12.5/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		../../../Qt/5.12.5/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Qt/5.12.5/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/5.12.5/mingw73_64/mkspecs/features/toolchain.prf \
 		../../../Qt/5.12.5/mingw73_64/mkspecs/features/default_pre.prf \
@@ -235,6 +236,7 @@ Makefile: ../ShagDB/itstep_db.pro ../../../Qt/5.12.5/mingw73_64/mkspecs/win32-g+
 		../ShagDB/itstep_db.pro \
 		../../../Qt/5.12.5/mingw73_64/lib/Qt5Widgets.prl \
 		../../../Qt/5.12.5/mingw73_64/lib/Qt5Gui.prl \
+		../../../Qt/5.12.5/mingw73_64/lib/Qt5Sql.prl \
 		../../../Qt/5.12.5/mingw73_64/lib/Qt5Core.prl \
 		../../../Qt/5.12.5/mingw73_64/lib/qtmain.prl
 	$(QMAKE) -o Makefile ..\ShagDB\itstep_db.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -385,6 +387,7 @@ Makefile: ../ShagDB/itstep_db.pro ../../../Qt/5.12.5/mingw73_64/mkspecs/win32-g+
 ../../../Qt/5.12.5/mingw73_64/mkspecs/features/qt_config.prf:
 ../../../Qt/5.12.5/mingw73_64/mkspecs/win32-g++/qmake.conf:
 ../../../Qt/5.12.5/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Qt/5.12.5/mingw73_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt/5.12.5/mingw73_64/mkspecs/features/toolchain.prf:
 ../../../Qt/5.12.5/mingw73_64/mkspecs/features/default_pre.prf:
@@ -410,6 +413,7 @@ Makefile: ../ShagDB/itstep_db.pro ../../../Qt/5.12.5/mingw73_64/mkspecs/win32-g+
 ../ShagDB/itstep_db.pro:
 ../../../Qt/5.12.5/mingw73_64/lib/Qt5Widgets.prl:
 ../../../Qt/5.12.5/mingw73_64/lib/Qt5Gui.prl:
+../../../Qt/5.12.5/mingw73_64/lib/Qt5Sql.prl:
 ../../../Qt/5.12.5/mingw73_64/lib/Qt5Core.prl:
 ../../../Qt/5.12.5/mingw73_64/lib/qtmain.prl:
 qmake: FORCE

@@ -1,0 +1,11 @@
+debug/faculty.o
+debug/group.o
+debug/main.o
+debug/mainwindow.o
+debug/students.o
+debug/teacher.o
+debug/moc_faculty.o
+debug/moc_group.o
+debug/moc_mainwindow.o
+debug/moc_students.o
+debug/moc_teacher.o
