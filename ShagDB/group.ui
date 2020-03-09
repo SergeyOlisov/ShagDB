@@ -67,7 +67,7 @@
     <pixmap>DesignImages/fon_end.png</pixmap>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushAdd">
+  <widget class="QPushButton" name="buttonAdd">
    <property name="geometry">
     <rect>
      <x>1080</x>
@@ -85,8 +85,8 @@
    </property>
    <property name="iconSize">
     <size>
-     <width>24</width>
-     <height>24</height>
+     <width>31</width>
+     <height>31</height>
     </size>
    </property>
   </widget>
@@ -120,7 +120,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushEdit">
+  <widget class="QPushButton" name="buttonEdit">
    <property name="geometry">
     <rect>
      <x>1050</x>
@@ -138,8 +138,8 @@
    </property>
    <property name="iconSize">
     <size>
-     <width>24</width>
-     <height>24</height>
+     <width>31</width>
+     <height>31</height>
     </size>
    </property>
   </widget>
@@ -148,8 +148,8 @@
   <zorder>labelGroup</zorder>
   <zorder>tableGroup</zorder>
   <zorder>textSearch</zorder>
-  <zorder>pushAdd</zorder>
-  <zorder>pushEdit</zorder>
+  <zorder>buttonAdd</zorder>
+  <zorder>buttonEdit</zorder>
  </widget>
  <resources/>
  <connections/>

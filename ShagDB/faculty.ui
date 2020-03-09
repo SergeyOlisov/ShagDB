@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushSearch">
+  <widget class="QPushButton" name="buttonSearch">
    <property name="geometry">
     <rect>
      <x>1100</x>
@@ -1101,7 +1101,7 @@
     <string>   Факультеты</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushAdd">
+  <widget class="QPushButton" name="buttonAdd">
    <property name="geometry">
     <rect>
      <x>1154</x>
@@ -1126,10 +1126,10 @@
   </widget>
   <zorder>label_pageCourses</zorder>
   <zorder>lineFaculty</zorder>
-  <zorder>pushSearch</zorder>
+  <zorder>buttonSearch</zorder>
   <zorder>tableCourses</zorder>
   <zorder>textSearch</zorder>
-  <zorder>pushAdd</zorder>
+  <zorder>buttonAdd</zorder>
  </widget>
  <resources/>
  <connections/>

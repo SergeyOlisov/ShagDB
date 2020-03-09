@@ -1138,7 +1138,7 @@
      <number>0</number>
     </property>
     <item row="0" column="0">
-     <widget class="QLabel" name="lab_Firstname">
+     <widget class="QLabel" name="lab_Lastname">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -1155,7 +1155,7 @@
      <widget class="QLineEdit" name="line_LastName"/>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="lab_Name">
+     <widget class="QLabel" name="lab_Firstname">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -1169,7 +1169,7 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QLineEdit" name="line_Name"/>
+     <widget class="QLineEdit" name="line_Firstname"/>
     </item>
     <item row="2" column="0">
      <widget class="QLabel" name="lab_Patronimyc">
@@ -1343,7 +1343,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="ButtonSearch">
+  <widget class="QPushButton" name="buttonSearch">
    <property name="geometry">
     <rect>
      <x>530</x>
@@ -1372,7 +1372,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_Edit">
+  <widget class="QPushButton" name="button_Edit">
    <property name="geometry">
     <rect>
      <x>974</x>

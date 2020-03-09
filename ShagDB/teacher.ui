@@ -116,7 +116,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushAdd">
+  <widget class="QPushButton" name="buttonAdd">
    <property name="geometry">
     <rect>
      <x>620</x>
@@ -155,12 +155,12 @@
     <pixmap>DesignImages/Photo.png</pixmap>
    </property>
   </widget>
-  <widget class="QPushButton" name="button_edit">
+  <widget class="QPushButton" name="buttonEdit">
    <property name="geometry">
     <rect>
-     <x>1110</x>
-     <y>620</y>
-     <width>121</width>
+     <x>974</x>
+     <y>732</y>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -168,11 +168,14 @@
     <string>Редактировать</string>
    </property>
   </widget>
-  <widget class="QDialogButtonBox" name="button_BoxSubmitCancel">
+  <widget class="QDialogButtonBox" name="buttonBoxSubmitCancel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>1090</x>
-     <y>660</y>
+     <x>920</x>
+     <y>700</y>
      <width>156</width>
      <height>23</height>
     </rect>
@@ -202,7 +205,7 @@
    </property>
    <layout class="QFormLayout" name="formLayout">
     <item row="0" column="0">
-     <widget class="QLabel" name="label_surname">
+     <widget class="QLabel" name="lab_Surname">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -216,7 +219,7 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label_name">
+     <widget class="QLabel" name="lab_Firstname">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -230,7 +233,7 @@
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_patronymic">
+     <widget class="QLabel" name="lab_Patronymic">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -244,7 +247,7 @@
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_date_of_birth">
+     <widget class="QLabel" name="lab_Age">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -258,7 +261,7 @@
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_sex">
+     <widget class="QLabel" name="lab_Sex">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -272,7 +275,7 @@
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QLabel" name="label_phone">
+     <widget class="QLabel" name="lab_Phone">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -286,7 +289,7 @@
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QLabel" name="label_email">
+     <widget class="QLabel" name="lab_Email">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -300,7 +303,7 @@
      </widget>
     </item>
     <item row="7" column="0">
-     <widget class="QLabel" name="label_disciplines">
+     <widget class="QLabel" name="lab_Discipline">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -314,7 +317,7 @@
      </widget>
     </item>
     <item row="8" column="0">
-     <widget class="QLabel" name="label_salary">
+     <widget class="QLabel" name="lab_Salary">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -328,7 +331,7 @@
      </widget>
     </item>
     <item row="9" column="0">
-     <widget class="QLabel" name="label_status">
+     <widget class="QLabel" name="lab_Status">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -342,34 +345,34 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit_surname"/>
+     <widget class="QLineEdit" name="line_Surname"/>
     </item>
     <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit_name"/>
+     <widget class="QLineEdit" name="line_Firstname"/>
     </item>
     <item row="2" column="1">
-     <widget class="QLineEdit" name="lineEdit_patronymic"/>
+     <widget class="QLineEdit" name="line_Patronymic"/>
     </item>
     <item row="3" column="1">
-     <widget class="QLineEdit" name="date_of_birth"/>
+     <widget class="QLineEdit" name="line_Age"/>
     </item>
     <item row="4" column="1">
-     <widget class="QLineEdit" name="lineEdit_sex"/>
+     <widget class="QLineEdit" name="line_Sex"/>
     </item>
     <item row="5" column="1">
-     <widget class="QLineEdit" name="lineEdit_phone"/>
+     <widget class="QLineEdit" name="line_Phone"/>
     </item>
     <item row="6" column="1">
-     <widget class="QLineEdit" name="lineEdit_email"/>
+     <widget class="QLineEdit" name="line_Email"/>
     </item>
     <item row="7" column="1">
-     <widget class="QLineEdit" name="lineEdit_disciplines"/>
+     <widget class="QLineEdit" name="line_Discipline"/>
     </item>
     <item row="8" column="1">
-     <widget class="QLineEdit" name="lineEdit_salary"/>
+     <widget class="QLineEdit" name="line_Salary"/>
     </item>
     <item row="9" column="1">
-     <widget class="QLineEdit" name="lineEdit_status"/>
+     <widget class="QLineEdit" name="line_Status"/>
     </item>
    </layout>
   </widget>
